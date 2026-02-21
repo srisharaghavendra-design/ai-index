@@ -25,7 +25,7 @@ export default function CompaniesPage() {
           c.website ?? "",
           c.hq ?? "",
           c.notes ?? "",
-          c.tags.join(" "),
+          (c.tags ?? []).join(" "),
         ].join(" ")
       );
       return haystack.includes(query);
