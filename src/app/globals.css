@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Enable dark color scheme */
+:root {
+  color-scheme: dark;
+}
+
+/* Ensure full height */
+html,
+body {
+  height: 100%;
+}
+
+/* Premium dark background */
+body {
+  margin: 0;
+  background-color: #050507;
+
+  background-image:
+    radial-gradient(
+      1200px 600px at 20% 0%,
+      rgba(99, 102, 241, 0.25),
+      transparent 55%
+    ),
+    radial-gradient(
+      1000px 500px at 80% 10%,
+      rgba(236, 72, 153, 0.20),
+      transparent 55%
+    );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Make selection look premium */
+::selection {
+  background: rgba(255, 255, 255, 0.15);
+}
